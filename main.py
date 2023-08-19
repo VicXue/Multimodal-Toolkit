@@ -191,6 +191,8 @@ def main():
             logger.info(tabular_config)
             logger.info(model)
 
+        training_args.deepspeed_plugin = None
+        training_args.distributed_state = None
         trainer = Trainer(
             model=model,
             args=training_args,

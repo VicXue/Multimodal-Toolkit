@@ -1,0 +1,26 @@
+{
+    "output_dir": "./logs_insider_threat/bert-class/",
+    "debug_dataset": false,
+    "task": "classification",
+    "combine_feat_method": "text_only",
+    "experiment_name": "Bert Base Uncased",
+    "model_name_or_path": "bert-base-multilingual-uncased",
+    "do_train": true,
+    "categorical_encode_type": "none",
+    "numerical_transformer_method": "quantile_normal",
+    "tokenizer_name": "bert-base-multilingual-uncased",
+    "use_simple_classifier": false,
+    "logging_dir": "./logs_insider_threat/bert-class/",
+    "num_train_epochs": 5,
+    "overwrite_output_dir": true,
+    "learning_rate": 3e-3,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "logging_steps": 50,
+    "eval_steps": 500,
+    "save_steps": 3000,
+    "data_path": "./datasets/IT_POC",
+    "column_info_path":  "./datasets/IT_POC/column_info_all_text.json"
+  }
+  
+  
